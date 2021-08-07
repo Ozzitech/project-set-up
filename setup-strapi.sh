@@ -9,7 +9,6 @@ echo What Port do you want it to run on?
 read PORT_NUMBER
 echo The project name is $PROJECT_NAME and port number is $PORT_NUMBER
 npx create-strapi-app $PROJECT_NAME --quickstart
-echo "PORT=$PORT_NUMBER" > $PROJECT_NAME/.env
 
 cat <<EOT >> $PROJECT_NAME/docker-compose.yml                             
  version: "3"
